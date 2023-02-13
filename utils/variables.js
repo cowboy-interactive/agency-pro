@@ -10,11 +10,11 @@ export const themes = {
   },
   dark: {
     primary: "#FF85A9",
-    secondary: "#FFF",
+    secondary: "#333",
     text: "#FFF",
     highlight: "#CD8258;=",
     button: "linear-gradient(92.11deg, #FF85A9 0%, #FFB7CC 100%);",
-    buttonText: "#212121",
+    buttonText: "#333",
     footer: "#222",
   },
 };

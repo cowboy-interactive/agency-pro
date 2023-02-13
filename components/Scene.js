@@ -33,6 +33,7 @@ export default function Scene({ scrollTop, windowSize }) {
       <Cube px={2.2} py={-2} pz={-10} ry={2} scrollTop={0} color={"#cfadf0"}/>
       <Cube px={2.2} py={2} pz={-10} ry={2} scrollTop={0} color={"#7bbeff"}/>
       <Cube px={-2.2} py={2} pz={-10} ry={2} scrollTop={0} color={"#ffcb7f"}/>
+
     </Canvas>
   );
 }

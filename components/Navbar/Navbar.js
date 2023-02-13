@@ -59,8 +59,8 @@ export const Navbar = ({
             </Link>
           );
         })}
-        {/* <ThemeSwitch /> */}
-        <Button xl={"margin: 0 0 0 0px;"} sm={"display: none"}>
+        <ThemeSwitch />
+        <Button xl={"margin: 0 0 0 40px;"} sm={"display: none"}>
           Contact Us
         </Button>
       </Container>

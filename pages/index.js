@@ -14,6 +14,7 @@ import useScrollTop from "hooks/useScrollTop";
 import useWindowSize from "hooks/useWindowSize";
 
 import dynamic from "next/dynamic";
+import { useTheme } from "utils/provider";
 const Scene = dynamic(() => import("components/Scene"), { ssr: true });
 
 export default function Home() {
@@ -21,12 +22,14 @@ export default function Home() {
   const windowSize = useWindowSize();
   const [position] = useState({ x: 0, y: 0 });
 
+  const { theme } = useTheme();
+
   return (
     <>
       <Scene scrollTop={scrollTop} windowSize={windowSize} />
       <Column
-        xl="padding-top: 100px;
-            backdrop-filter: blur( 50px );"
+        xl={`padding-top: 100px;
+            backdrop-filter: blur(${theme == "dark" ? "0px" : "50px"});`}
       >
         <Section xl="justify-content: center;">
           <Column xl="margin: 0 0 60px 0; align-items: center; text-align: center; max-width: 650px; min-width: 0px;">
