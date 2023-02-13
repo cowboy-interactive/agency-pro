@@ -29,10 +29,10 @@ export default function Scene({ scrollTop, windowSize }) {
       />
       <ambientLight />
       <pointLight position={[-10, -10, 100]} />
-      <Cube px={-2.2} py={-2} pz={-10} ry={2} scrollTop={0} color={"#ffbf1c"}/>
-      <Cube px={2.2} py={-2} pz={-10} ry={2} scrollTop={0} color={"#cfadf0"}/>
-      <Cube px={2.2} py={2} pz={-10} ry={2} scrollTop={0} color={"#7bbeff"}/>
-      <Cube px={-2.2} py={2} pz={-10} ry={2} scrollTop={0} color={"#ffcb7f"}/>
+      <Cube px={-2.2} py={-2} pz={-10 - scrollTop} ry={2} scrollTop={0} color={"#ffbf1c"}/>
+      <Cube px={2.2} py={-2} pz={-10 - scrollTop} ry={2} scrollTop={0} color={"#cfadf0"}/>
+      <Cube px={2.2} py={2} pz={-10 - scrollTop} ry={2} scrollTop={0} color={"#7bbeff"}/>
+      <Cube px={-2.2} py={2} pz={-10 - scrollTop} ry={2} scrollTop={0} color={"#ffcb7f"}/>
 
     </Canvas>
   );

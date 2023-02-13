@@ -13,7 +13,11 @@ export default function Cube({ px, py, pz, ry, scrollTop, color="blue" }) {
         py + scrollTop * 0.05,
         0.1
       )),
-      (group.current.position.z = pz),
+      (group.current.position.z = lerp(
+        group.current.position.z,
+        pz + scrollTop * 0.05,
+        0.1
+      )),
       (group.current.rotation.y += 0.005),
       (group.current.rotation.x += 0.005)
     )
