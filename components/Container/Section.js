@@ -44,7 +44,7 @@ const Cont = styled(motion.section)`
 
   @media (max-width: ${sizes.md}) {
     ${({ md }) => md};
-    padding: 0px 5% 0 5%;
+    padding: 100px 5% 0 5%;
   }
 
   @media (max-width: ${sizes.sm}) {

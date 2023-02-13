@@ -22,16 +22,17 @@ export default function Scene({ scrollTop, windowSize }) {
       }}
     >
       <PerspectiveCamera
-        fov={50}
+        fov={10}
         makeDefault
         rotation={[0, 0, 0]}
         position={windowSize.width > 500 ? [0, 0, 0] : [0, 0, 10]}
       />
       <ambientLight />
       <pointLight position={[-10, -10, 100]} />
-      <Pyramid px={7.5} py={0} pz={-15} ry={1} scrollTop={scrollTop} />
-      <Ball px={7.5} py={-30} pz={-30} ry={2} scrollTop={scrollTop} />
-      <Cube px={-7.5} py={-15} pz={-20} ry={2} scrollTop={scrollTop} />
+      <Cube px={-2.2} py={-2} pz={-10} ry={2} scrollTop={0} color={"#ffbf1c"}/>
+      <Cube px={2.2} py={-2} pz={-10} ry={2} scrollTop={0} color={"#cfadf0"}/>
+      <Cube px={2.2} py={2} pz={-10} ry={2} scrollTop={0} color={"#7bbeff"}/>
+      <Cube px={-2.2} py={2} pz={-10} ry={2} scrollTop={0} color={"#ffcb7f"}/>
     </Canvas>
   );
 }

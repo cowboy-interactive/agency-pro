@@ -1,15 +1,15 @@
 export const themes = {
   default: {
-    primary: "#FFF",
-    secondary: "#212121",
-    text: "#212121",
-    highlight: "#87593F",
-    button: "linear-gradient(92.11deg, #00B88C 0%, #00E3AD 100%);",
+    primary: "#FF85A9",
+    secondary: "#333",
+    text: "#FFF",
+    highlight: "#CD8258;=",
+    button: "linear-gradient(92.11deg, #FF85A9 0%, #FFB7CC 100%);",
     buttonText: "#333",
     footer: "#222",
   },
   dark: {
-    primary: "#212121",
+    primary: "#FF85A9",
     secondary: "#FFF",
     text: "#FFF",
     highlight: "#CD8258;=",

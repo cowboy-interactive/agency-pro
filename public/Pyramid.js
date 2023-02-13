@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 var lerp = require("lerp");
 
-export default function Pyramid({ px, py, pz, ry, scrollTop }) {
+export default function Pyramid({ px, py, pz, ry, scrollTop, color }) {
   const group = useRef();
   useFrame(
     (state) => (
@@ -25,10 +25,11 @@ export default function Pyramid({ px, py, pz, ry, scrollTop }) {
         castShadow
         receiveShadow
         geometry={nodes.Cone.geometry}
-        material={materials["Material.004"]}
         rotation={[0, -0.45, 0]}
         scale={3}
-      />
+        >
+        <meshStandardMaterial color={color} />
+      </mesh>
     </group>
   );
 }

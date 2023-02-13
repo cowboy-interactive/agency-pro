@@ -43,7 +43,7 @@ export const Navbar = ({
         setShowMenu={setShowMenu}
         xl={"font-size: 20px; font-weight: 500;"}
       >
-        Cowboy UI
+        Agency
       </Link>
       <Container xl={"align-items: center;"}>
         {links.map((item, i) => {
@@ -59,8 +59,8 @@ export const Navbar = ({
             </Link>
           );
         })}
-        <ThemeSwitch />
-        <Button xl={"margin: 0 0 0 40px;"} sm={"display: none"}>
+        {/* <ThemeSwitch /> */}
+        <Button xl={"margin: 0 0 0 0px;"} sm={"display: none"}>
           Contact Us
         </Button>
       </Container>
@@ -81,7 +81,6 @@ const Cont = styled(motion.div)`
   box-sizing: border-box;
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
-  border-bottom: 2px solid ${(props) => props.color}};
   box-shadow: ${({ boxShadow }) => boxShadow};
 
   ${({ xl }) => xl};
