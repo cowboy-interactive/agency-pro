@@ -34,27 +34,25 @@ export const Section = ({
 const Cont = styled(motion.section)`
   display: flex;
   justify-content: space-between;
-  margin: 100px 0;
-  padding: 0 20%;
+  padding: 100px 10% 100px 10%;
 
-  ${({xl}) => xl};
+  ${({ xl }) => xl};
 
   @media (max-width: ${sizes.lg}) {
-    ${({lg}) => lg};
+    ${({ lg }) => lg};
   }
 
   @media (max-width: ${sizes.md}) {
-    padding: 0 5%;
-    ${({md}) => md};
+    ${({ md }) => md};
+    padding: 0px 5% 0 5%;
   }
 
   @media (max-width: ${sizes.sm}) {
     flex-direction: column;
-    margin: 60px 0;
-    ${({sm}) => sm};
+    ${({ sm }) => sm};
   }
 
   @media (max-width: ${sizes.xs}) {
-    ${({xs}) => xs};
+    ${({ xs }) => xs};
   }
 `;

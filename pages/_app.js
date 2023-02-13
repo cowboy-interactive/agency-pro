@@ -8,7 +8,7 @@ import { Container } from "../components/Container/Container";
 function MyApp({ Component, pageProps }) {
   return (
     <AppProvider>
-      <Navbar xl={"padding: 0 20%"} md={"padding: 0 5%"} />
+      <Navbar xl={"padding: 0 10%"} md={"padding: 0 5%"} />
       <Component {...pageProps} />
     </AppProvider>
   );
