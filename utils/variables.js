@@ -1,6 +1,6 @@
 export const themes = {
   default: {
-    primary: "#FF85A9",
+    primary: "#fff",
     secondary: "#333",
     text: "#FFF",
     highlight: "#CD8258;=",
@@ -9,7 +9,7 @@ export const themes = {
     footer: "#222",
   },
   dark: {
-    primary: "#FF85A9",
+    primary: "#fff",
     secondary: "#333",
     text: "#FFF",
     highlight: "#CD8258;=",

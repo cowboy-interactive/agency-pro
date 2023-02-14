@@ -31,8 +31,8 @@ export default function Home() {
         xl={`padding-top: 100px;
             backdrop-filter: blur(${theme == "dark" ? "0px" : "50px"});`}
       >
-        <Section xl="justify-content: center;">
-          <Column xl="margin: 0 0 60px 0; align-items: center; text-align: center; max-width: 650px; min-width: 0px;">
+        <Section xl=" height: 800px; justify-content: center; align-items: flex-start;">
+          <Column xl="margin: 0 0 60px 0; align-items: center; text-align: center; max-width: 650px; min-width: 0px; ">
             <H1>Your One Stop Solution For All Your Marketing Needs</H1>
             <Text>
               We are a full-service marketing agency with a passion for
@@ -49,7 +49,77 @@ export default function Home() {
           </Column>
         </Section>
 
-        <Section xl="height: 1000px;"></Section>
+        <Section xl="height: 800px; justify-content: center; align-items: flex-start;">
+          <Column xl="margin: 0 0 60px 0; align-items: center; text-align: center; max-width: 650px; min-width: 0px;">
+            <H2>Web Design</H2>
+            <Text>
+              We are a full-service marketing agency with a passion for
+              delivering results that matter. Our team of experts is dedicated
+              to helping businesses like yours reach their fullest potential
+              through effective and innovative marketing strategies.
+            </Text>
+            <Button
+              xl="
+            background: none;"
+            >
+              Contact Us
+            </Button>
+          </Column>
+        </Section>
+
+        <Section xl="height: 1000px; justify-content: center; align-items: flex-start;">
+          <Column xl="margin: 0 0 60px 0; align-items: center; text-align: center; max-width: 650px; min-width: 0px;">
+            <H2>Web Development</H2>
+            <Text>
+              We are a full-service marketing agency with a passion for
+              delivering results that matter. Our team of experts is dedicated
+              to helping businesses like yours reach their fullest potential
+              through effective and innovative marketing strategies.
+            </Text>
+            <Button
+              xl="
+            background: none;"
+            >
+              Contact Us
+            </Button>
+          </Column>
+        </Section>
+
+        <Section xl="height: 1000px; justify-content: center; align-items: flex-start;">
+          <Column xl="margin: 0 0 60px 0; align-items: center; text-align: center; max-width: 650px; min-width: 0px;">
+            <H2>Analytics & Optimization</H2>
+            <Text>
+              We are a full-service marketing agency with a passion for
+              delivering results that matter. Our team of experts is dedicated
+              to helping businesses like yours reach their fullest potential
+              through effective and innovative marketing strategies.
+            </Text>
+            <Button
+              xl="
+            background: none;"
+            >
+              Contact Us
+            </Button>
+          </Column>
+        </Section>
+
+        <Section xl="height: 1000px; justify-content: center; align-items: flex-start;">
+          <Column xl="margin: 0 0 60px 0; align-items: center; text-align: center; max-width: 650px; min-width: 0px;">
+            <H2>Hosting and Care</H2>
+            <Text>
+              We are a full-service marketing agency with a passion for
+              delivering results that matter. Our team of experts is dedicated
+              to helping businesses like yours reach their fullest potential
+              through effective and innovative marketing strategies.
+            </Text>
+            <Button
+              xl="
+            background: none;"
+            >
+              Contact Us
+            </Button>
+          </Column>
+        </Section>
       </Column>
     </>
   );

@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 var lerp = require("lerp");
 
-export default function Ball({ px, py, pz, ry, scrollTop }) {
+export default function Ball({ px, py, pz, ry, scrollTop, transparent, color = "blue" }) {
   const group = useRef();
   useFrame(
     (state) => (
@@ -13,7 +13,11 @@ export default function Ball({ px, py, pz, ry, scrollTop }) {
         py + scrollTop * 0.05,
         0.1
       )),
-      (group.current.position.z = pz),
+      (group.current.position.z = lerp(
+        group.current.position.z,
+        pz + scrollTop * 0.05,
+        0.1
+      )),
       (group.current.rotation.y += 0.005),
       (group.current.rotation.x += 0.005)
     )
@@ -25,10 +29,10 @@ export default function Ball({ px, py, pz, ry, scrollTop }) {
         castShadow
         receiveShadow
         geometry={nodes.Sphere.geometry}
-        material={materials["Material.002"]}
         scale={3}
         rotation={[0, -0.45, 0]}
       />
+      <meshStandardMaterial color="blue" transparent={transparent} opacity={transparent ? "0" : "0.5"} />
     </group>
   );
 }

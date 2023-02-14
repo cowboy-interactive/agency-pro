@@ -48,7 +48,6 @@ const Cont = styled(motion.section)`
   }
 
   @media (max-width: ${sizes.sm}) {
-    flex-direction: column;
     ${({ sm }) => sm};
   }
 

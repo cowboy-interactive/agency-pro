@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 var lerp = require("lerp");
 
-export default function Cube({ px, py, pz, ry, scrollTop, color="blue" }) {
+export default function Cube({ px, py, pz, ry, scrollTop, color = "blue", transparent=false }) {
   const group = useRef();
   useFrame(
     (state) => (
@@ -32,7 +32,7 @@ export default function Cube({ px, py, pz, ry, scrollTop, color="blue" }) {
         scale={2}
         rotation={[0, -0.45, 0]}
       >
-        <meshStandardMaterial color={color} />
+        <meshStandardMaterial color={color} transparent={transparent} opacity={transparent ? "0" : "1"} />
       </mesh>
     </group>
   );
